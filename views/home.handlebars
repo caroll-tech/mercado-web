@@ -1,0 +1,18 @@
+{{> partials/menu }}
+<main>
+<div class="container"> 
+<h1 class="text-secondary text-center display -3 fw-bold my-5">Nuestros Productos</h1>
+
+<div class="row">
+        {{#each productos}}
+            <div class="col-md-4 px-5 mb-5">
+                {{> partials/producto
+                    nombre = this.name
+                    imagen = this.imagen
+                }}
+            </div>
+        {{/each}}
+    </div>
+
+</div>
+</main>
