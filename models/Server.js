@@ -44,10 +44,11 @@ class Server {
         this.app.use( express.static('public') );
         this.app.use('/css', express.static(`${__dirname}/../public/assets/css`));
         this.app.use('/img', express.static( `${__dirname}/../public/assets/img`));
+        this.app.use('/js', express.static( `${__dirname}/../public/assets/js`));
         // Ruta de CSS para Bootstrap
         this.app.use('/bootstrap', express.static( `${__dirname}/../node_modules/bootstrap/dist/css`));
         this.app.use('/bootstrapjs',express.static(  `${__dirname}/../node_modules/bootstrap/dist/js`  ));
-        this.app.use("/jquery", express.static( `${__dirname}/node_modules/jquery/dist`));
+        this.app.use("/jquery", express.static( `${__dirname}/../node_modules/jquery/dist`));
     }
 
     routes(){

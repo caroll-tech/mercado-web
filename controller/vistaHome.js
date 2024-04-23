@@ -5,10 +5,11 @@ export const vistaHome = ( req , res) => {
         productos : [{
                        name :"Banana",
                        imagen :"banana.png",
+                       
                      },
                      {
                       name :"Cebollas",
-                      imagen :"Cebollas.png",
+                      imagen :"cebollas.png",
                     },
                     {
                       name :"Pimenton",
@@ -23,7 +24,7 @@ export const vistaHome = ( req , res) => {
                       imagen :"lechuga.png",
                     },
                     {
-                      name :"Tomates",
+                      name :"Tomate",
                       imagen :"tomate.png",
                     },
 
